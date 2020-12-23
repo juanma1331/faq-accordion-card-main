@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
+  },
+  "name": "faq-accordion-card-main",
+  "description": "![Design preview for the FAQ Accordion Card coding challenge](./design/desktop-preview.jpg)",
+  "version": "1.0.0",
+  "main": "postcss.config.js",
+  "devDependencies": {},
+  "scripts": {
+    "compile": "postcss tailwind.css -o styles.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

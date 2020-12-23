@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .transition-max-height {
+    transition: max-height 0.2s ease-in-out; /* cubic-bezier(0.4, 0, 0.2, 1) */
+  }
+}
+
+@layer components {
+  .arrow-active {
+    @apply transform rotate-180;
+  }
+  .accordion__btn__span--active {
+    @apply font-bold text-black;
+  }
+}

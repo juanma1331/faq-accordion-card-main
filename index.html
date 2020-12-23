@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body
+    class="flex flex-col justify-center min-h-screen font-serif bg-gradient-to-b from-soft-violet to-soft-blue"
+  >
+    <!-- How many team members can I invite? You can invite up to 2 additional users
+    on the Free plan. There is no limit on team members for the Premium plan.
+    What is the maximum file upload size? No more than 2GB. All files in your
+    account must fit your allotted storage space. How do I reset my password?
+    Click “Forgot password” from the login page or “Change password” from your
+    profile page. A reset link will be emailed to you. Can I cancel my
+    subscription? Yes! Send us a message and we’ll process your request no
+    questions asked. Do you provide additional support? Chat and email support
+    is available 24/7. Phone lines are open during normal business hours. -->
+
+    <!-- FAQ ACCORDION -->
+    <section class="container px-6 mt-20 md:mt-0 md:px-24 md:mx-auto">
+      <img
+        class="absolute z-10 hidden md:block"
+        src="./images/illustration-box-desktop.svg"
+        alt="a box"
+        style="top: 350px; left: 82px"
+      />
+      <div
+        class="pb-8 bg-white md:py-8 rounded-3xl md:flex md:items-center md:overflow-hidden"
+      >
+        <!-- ILLUSTRARION -->
+        <!-- MOBILE -->
+        <div class="relative md:hidden">
+          <img
+            class="absolute transform bottom-4 left-4 -rotate-2"
+            src="./images/illustration-woman-online-mobile.svg"
+            alt=""
+          />
+          <img
+            class="mx-auto transform -rotate-2"
+            src="./images/bg-pattern-mobile.svg"
+            alt=""
+          />
+        </div>
+        <!-- END MOBILE -->
+        <!-- DESKTOP -->
+        <div class="relative hidden w-1/2 md:block">
+          <img
+            class="absolute"
+            src="./images/bg-pattern-desktop.svg"
+            alt="bg pattern"
+            style="top: -370px; left: -70px"
+          />
+          <img
+            class="absolute"
+            src="./images/illustration-woman-online-desktop.svg"
+            alt="woman online"
+            style="top: -180px; left: -74px"
+          />
+        </div>
+        <!-- END DESKTOP -->
+        <!-- END ILLUSTRARION -->
+        <!-- ITEMS -->
+        <div class="px-3 md:w-1/2 md:px-16">
+          <h2
+            class="mt-6 mb-4 text-4xl font-bold text-center text-dark-blue md:text-left md:px-3"
+          >
+            FAQ
+          </h2>
+          <button
+            class="flex items-center justify-between w-full px-3 py-2 text-xs md:py-3 hover:text-yellow-600 text-dark-grayish-blue focus:outline-none focus:ring-2 focus:ring-purple-200"
+            id="accordion-item"
+          >
+            <span class="pointer-events-none accordion__btn__span">
+              How many team members can I invite?
+            </span>
+            <img
+              class="pointer-events-none"
+              src="./images/icon-arrow-down.svg"
+              alt=""
+            />
+          </button>
+          <div class="overflow-hidden transition-max-height max-h-0">
+            <p class="pt-1 pb-2 pl-3 pr-6 text-xs text-dark-grayish-blue">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+          </div>
+
+          <hr class="mx-3 my-1 mb-2 border-light-grayish-blue" />
+
+          <button
+            class="flex items-center justify-between w-full px-3 py-2 text-xs md:py-3 hover:text-yellow-600 text-dark-grayish-blue focus:outline-none focus:ring-2 focus:ring-purple-200"
+            id="accordion-item"
+          >
+            <span class="pointer-events-none accordion__btn__span">
+              How many team members can I invite?
+            </span>
+            <img
+              class="pointer-events-none"
+              src="./images/icon-arrow-down.svg"
+              alt=""
+            />
+          </button>
+          <div class="overflow-hidden transition-max-height max-h-0">
+            <p class="pt-1 pb-2 pl-3 pr-6 text-xs text-dark-grayish-blue">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+          </div>
+
+          <hr class="mx-3 my-1 mb-2 border-light-grayish-blue" />
+
+          <button
+            class="flex items-center justify-between w-full px-3 py-2 text-xs md:py-3 hover:text-yellow-600 text-dark-grayish-blue focus:outline-none focus:ring-2 focus:ring-purple-200"
+            id="accordion-item"
+          >
+            <span class="pointer-events-none accordion__btn__span">
+              How many team members can I invite?
+            </span>
+            <img
+              class="pointer-events-none"
+              src="./images/icon-arrow-down.svg"
+              alt=""
+            />
+          </button>
+          <div class="overflow-hidden transition-max-height max-h-0">
+            <p class="pt-1 pb-2 pl-3 pr-6 text-xs text-dark-grayish-blue">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+          </div>
+
+          <hr class="mx-3 my-1 mb-2 border-light-grayish-blue" />
+
+          <button
+            class="flex items-center justify-between w-full px-3 py-2 text-xs md:py-3 hover:text-yellow-600 text-dark-grayish-blue focus:outline-none focus:ring-2 focus:ring-purple-200"
+            id="accordion-item"
+          >
+            <span class="pointer-events-none accordion__btn__span">
+              How many team members can I invite?
+            </span>
+            <img
+              class="pointer-events-none"
+              src="./images/icon-arrow-down.svg"
+              alt=""
+            />
+          </button>
+          <div class="overflow-hidden transition-max-height max-h-0">
+            <p class="pt-1 pb-2 pl-3 pr-6 text-xs text-dark-grayish-blue">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+          </div>
+
+          <hr class="mx-3 my-1 mb-2 border-light-grayish-blue" />
+
+          <button
+            class="flex items-center justify-between w-full px-3 py-2 text-xs md:py-3 hover:text-yellow-600 text-dark-grayish-blue focus:outline-none focus:ring-2 focus:ring-purple-200"
+            id="accordion-item"
+          >
+            <span class="pointer-events-none accordion__btn__span">
+              How many team members can I invite?
+            </span>
+            <img
+              class="pointer-events-none"
+              src="./images/icon-arrow-down.svg"
+              alt=""
+            />
+          </button>
+          <div class="overflow-hidden transition-max-height max-h-0">
+            <p class="pt-1 pb-2 pl-3 pr-6 text-xs text-dark-grayish-blue">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+          </div>
+
+          <hr class="mx-3 my-1 mb-2 border-light-grayish-blue" />
+        </div>
+        <!-- END ITEMS -->
+      </div>
+    </section>
+    <!-- END ACCORDION -->
+    <div class="mt-1 text-sm text-center text-gray-400 attribution">
+      Challenge by
+      <a
+        class="font-semibold text-white"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a class="font-semibold text-white" href="#">Juanma</a>.
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
